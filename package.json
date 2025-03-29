@@ -1,0 +1,23 @@
+{
+  "name": "coderplex-theme",
+  "displayName": "coderplex-theme",
+  "publisher": "zeshancodes",
+  "description": "coderplex default color theme",
+  "version": "0.0.1",
+  "icon": "logo.jpg",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "coderplex-theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/coderplex-theme-color-theme.json"
+      }
+    ]
+  }
+}

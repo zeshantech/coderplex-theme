@@ -1,0 +1,184 @@
+{
+	"$schema": "vscode://schemas/color-theme",
+	"name": "coderplex-purple-dark",
+	"type": "dark",
+  
+	//
+	// 1) WORKBENCH (IDE) COLORS
+	//
+	"colors": {
+	  // Base editor and UI backgrounds
+	  "editor.background": "#000000",
+	  "editor.foreground": "#FFFFFF",
+  
+	  // Sidebar
+	  "sideBar.background": "#0a000a",      // Slightly off-black with a purple tinge
+	  "sideBar.foreground": "#FFFFFF",
+	  "sideBarTitle.foreground": "#c080ff", // Light purple for sidebar title
+  
+	  // Activity Bar
+	  "activityBar.background": "#0a000a",
+	  "activityBar.foreground": "#FFFFFF",
+	  "activityBarBadge.background": "#c080ff",
+	  "activityBarBadge.foreground": "#000000", // Contrast: black text on purple badge
+  
+	  // Status Bar
+	  "statusBar.background": "#000000",
+	  "statusBar.foreground": "#FFFFFF",
+	  "statusBar.border": "#c080ff",
+  
+	  // Title Bar
+	  "titleBar.activeBackground": "#0f001f",
+	  "titleBar.activeForeground": "#FFFFFF",
+	  "titleBar.inactiveBackground": "#1a002f",
+	  "titleBar.inactiveForeground": "#8f5fbf",
+  
+	  // Panel (bottom area)
+	  "panel.background": "#000000",
+	  "panel.border": "#c080ff",
+  
+	  // Tabs
+	  "tab.activeBackground": "#000000",
+	  "tab.activeForeground": "#FFFFFF",
+	  "tab.inactiveBackground": "#1a002f",
+	  "tab.inactiveForeground": "#8f5fbf",
+	  "tab.border": "#c080ff",
+  
+	  // Terminal
+	  "terminal.background": "#000000",
+	  "terminal.foreground": "#FFFFFF",
+	  "terminalCursor.background": "#FFFFFF",
+	  "terminalCursor.foreground": "#c080ff"
+	},
+  
+	//
+	// 2) TOKEN COLORS (SYNTAX)
+	//    - We'll keep core text white (#FFFFFF).
+	//    - Comments a dimmer gray, and some key tokens with subtle color.
+	//
+	"tokenColors": [
+	  // Default text = white
+	  {
+		"scope": "meta, entity, variable, punctuation, text",
+		"settings": {
+		  "foreground": "#FFFFFF"
+		}
+	  },
+	  {
+		"name": "Comment",
+		"scope": [
+		  "comment",
+		  "punctuation.definition.comment"
+		],
+		"settings": {
+		  "foreground": "#888888",
+		  "fontStyle": "italic"
+		}
+	  },
+	  {
+		"name": "Strings",
+		"scope": ["string"],
+		"settings": {
+		  "foreground": "#b2e88f" // a mild green
+		}
+	  },
+	  {
+		"name": "Keywords & Storage",
+		"scope": ["keyword", "storage.type", "storage.modifier"],
+		"settings": {
+		  "foreground": "#c080ff" // accent purple
+		}
+	  },
+	  {
+		"name": "Numbers, Constants",
+		"scope": [
+		  "constant.numeric",
+		  "constant.language",
+		  "constant.character",
+		  "constant.other"
+		],
+		"settings": {
+		  "foreground": "#ffae57" // soft orange
+		}
+	  },
+	  {
+		"name": "Function Names",
+		"scope": [
+		  "entity.name.function",
+		  "meta.function-call",
+		  "variable.function",
+		  "support.function",
+		  "keyword.other.special-method"
+		],
+		"settings": {
+		  "foreground": "#ffc66d" // warm yellow-orange
+		}
+	  },
+	  {
+		"name": "Class Names, Types",
+		"scope": [
+		  "entity.name.type.class",
+		  "entity.name.class",
+		  "support.class",
+		  "support.type",
+		  "entity.other.inherited-class"
+		],
+		"settings": {
+		  "foreground": "#80c0ff" // subtle blue
+		}
+	  },
+	  {
+		"name": "Invalid / Error",
+		"scope": ["invalid", "invalid.illegal"],
+		"settings": {
+		  "foreground": "#ff5370"
+		}
+	  },
+	  {
+		"name": "HTML/JSX Tags",
+		"scope": [
+		  "entity.name.tag",
+		  "meta.tag.sgml",
+		  "markup.deleted.git_gutter"
+		],
+		"settings": {
+		  "foreground": "#ff80c0"
+		}
+	  },
+	  {
+		"name": "Attributes (HTML, JSX, CSS)",
+		"scope": [
+		  "entity.other.attribute-name",
+		  "meta.tag.sgml.attribute.name"
+		],
+		"settings": {
+		  "foreground": "#80e8ff"
+		}
+	  },
+	  {
+		"name": "CSS IDs, Classes",
+		"scope": [
+		  "entity.other.attribute-name.id",
+		  "entity.other.attribute-name.class"
+		],
+		"settings": {
+		  "foreground": "#c080ff"
+		}
+	  },
+	  {
+		"name": "Operators, Punctuation",
+		"scope": [
+		  "keyword.operator",
+		  "punctuation.separator",
+		  "punctuation.terminator"
+		],
+		"settings": {
+		  "foreground": "#FFFFFF"
+		}
+	  },
+  
+	  // Markdown, JSON keys, etc. (optional, add if you like)
+	  // ...
+	]
+  }
+  
